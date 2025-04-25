@@ -4,8 +4,8 @@
   "description": "Todo API with Authentication",
   "main": "api/index.js",
   "scripts": {
-    "dev": "nodemon api/index.js",
-    "start": "node api/index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
