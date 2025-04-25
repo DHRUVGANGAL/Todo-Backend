@@ -182,5 +182,7 @@ app.put('/update-todo/:id', auth, async function(req, res) {
   }
 });
 
+module.exports = app;
+
 // Export handler for serverless function
-module.exports = serverless(app);
+// module.exports = serverless(app);
