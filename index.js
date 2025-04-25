@@ -1,12 +1,13 @@
 // api/index.js
 const express = require('express');
 const serverless = require('serverless-http');
+require('dotenv').config();
 const app = express();
 app.use(express.json());
 const Jwt = require('jsonwebtoken');
 const JWT_secret = process.env.JWT_SECRET || "hiitheresecret";
 const mongoose = require('mongoose');
-const { UserModel, TodoModel } = require('../db');
+const { UserModel, TodoModel } = require("./db");
 const bcrypt = require('bcrypt');
 const { z } = require('zod');
 const cors = require("cors");
