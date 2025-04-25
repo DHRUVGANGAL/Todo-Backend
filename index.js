@@ -19,7 +19,9 @@ mongoose.connect(MONGODB_URI)
   .catch(err => console.error('MongoDB connection error:', err));
 
 app.use(cors());
-
+app.get('/',async function (req,res) {
+    res.send("hello world");
+})
 app.post('/signup', async function(req, res) {
   console.log("Received data:", req.body);
   // Validation schema
